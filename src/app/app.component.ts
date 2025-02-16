@@ -10,5 +10,4 @@ import {ConfiguratorService} from './configurator.service';
 })
 export class AppComponent {
   service = inject(ConfiguratorService);
-
 }

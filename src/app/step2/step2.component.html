@@ -6,6 +6,7 @@ Config:
     <option [value]="config.id">{{config.description}}</option>
   }
 </select>
+  <br />
 @if( service.currentConfig(); as config) {
   <div>
     Range: {{config.range}} miles
