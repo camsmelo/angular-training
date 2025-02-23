@@ -6,7 +6,6 @@ Config:
     <option [value]="config.id">{{config.description}}</option>
   }
 </select>
-  <br />
 @if( service.currentConfig(); as config) {
   <div>
     Range: {{config.range}} miles
@@ -21,6 +20,7 @@ Config:
 }
   <br/>
 @if (service.selectableOptions()?.yoke) {
-  Yoke steering wheel? <input type="checkbox" #yoke (change)="service.currentWheelIsYoke.set(yoke.checked)"  />
+  Yoke steering wheel?
+  <input type="checkbox" #yoke (change)="service.currentWheelIsYoke.set(yoke.checked)"  />
 }
 </div>

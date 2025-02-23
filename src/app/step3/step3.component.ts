@@ -17,8 +17,4 @@ export class Step3Component {
 
   service = inject(ConfiguratorService);
 
-  constructor(){
-    console.log(this.service.selectableOptions())
-  }
-
 }

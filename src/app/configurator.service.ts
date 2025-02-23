@@ -53,8 +53,8 @@ export class ConfiguratorService {
     const model = this.allModels().find(model => model.code === code);
     this.currentCar.set(model);
     this.currentColor.set(model?.colors[0]);
-    this.currentWheelIsYoke.set(false);
     this.currentTowHitchIsSelected.set(false);
+    this.currentWheelIsYoke.set(false);
     this.currentConfig.set(undefined);
   }
 
